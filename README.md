@@ -5,13 +5,11 @@ FBX exporter add-on for Blender 3.0+ compatible with Unity's coordinate and scal
 
 ## How to install
 
-1. Clone the repository or download the add-on file [`blender-to-unity-fbx-exporter.py`](https://raw.githubusercontent.com/EdyJ/blender-to-unity-fbx-exporter/master/blender-to-unity-fbx-exporter.py) to your device.
-2. In Blender go to Edit > Preferences > Add-ons, then use the Install… button and use the File Browser to select the add-on file.
+1. Clone the repository or download it as a zip file.
+2. In Blender go to Edit > Preferences > Add-ons, then use the Install… button and use the File Browser to select the dowloaded .zip file.
 3. Enable the add-on by checking the enable checkbox.
 
-<p align="center">
-<img src="/img/blender-to-unity-fbx-exporter-addon.png" alt="Blender To Unity FBX Exporter Add-On">
-</p>
+![blender-to-unity-fbx-exporter-addon](img/blender-to-unity-fbx-exporter-addon.png)
 
 ## How to use
 
@@ -19,15 +17,16 @@ FBX exporter add-on for Blender 3.0+ compatible with Unity's coordinate and scal
 
 Exports all Empty, Mesh and Armature objects in the current scene except those in excluded collections. The full hierarchy is properly preserved and exported, including local positions and rotations.
 
-<p align="center">
-<img src="/img/blender-to-unity-fbx-exporter-menu.png" alt="Blender To Unity FBX Exporter Menu">
-</p>
+![blender-to-unity-fbx-exporter-menu](img/blender-to-unity-fbx-exporter-menu.png)
 
-The File Browser exposes selection and armature options:
 
-<p align="center">
-<img src="/img/blender-to-unity-fbx-exporter-options.png" alt="Blender To Unity FBX Exporter Options">
-</p>
+The File Browser exposes all standard fbx export options except whose that are related to axis transforms.
+
+![blender-to-unity-fbx-exporter-options](img/blender-to-unity-fbx-exporter-options.png)
+
+This fork supports collection export introduced in Blender 4.2
+
+![blender-to-unity-fbx-exporter-collection-export](img/blender-to-unity-fbx-exporter-collection-export.png)
 
 ## How it works
 
@@ -74,7 +73,7 @@ Requires Blender to be installed in the system, so:
 - Nested collections.
 - Objects with their parent in a disabled/excluded collection.
 
-## About the author
+## About the original author
 
 Angel "Edy" Garcia<br>
 [@VehiclePhysics](https://twitter.com/VehiclePhysics)<br>
